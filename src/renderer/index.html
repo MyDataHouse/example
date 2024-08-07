@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>三友信图Gis工具箱</title>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <link type="image/x-icon" rel="icon" href="<%- BASE_URL %>favicon.ico" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self' data:; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:"
+    />
+    <meta name="description" content="三友信图Gis工具箱,处理Gis数据转换，参数话建模，影像自定义下载" />
+    <meta property="og:title" content="三友信图Gis工具箱" />
+    <meta property="og:description" content="三友信图Gis工具箱,处理Gis数据转换，参数话建模，影像自定义下载" />
+    <meta property="og:image" content="<%- BASE_URL %>icon.png" />
+    <!--[if lt IE 11]>
+      <script src="<%- BASE_URL %>ie.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="<%- BASE_URL %>css/harmonyos_sans_sc.css" />
+  </head>
+
+  <body>
+    <noscript>
+      <strong>
+        We're sorry but 三友信图Gis工具箱 doesn't work properly without JavaScript enabled. Please enable it to
+        continue.
+      </strong>
+    </noscript>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

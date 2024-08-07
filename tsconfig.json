@@ -1,0 +1,31 @@
+{
+  "files": [],
+  "references": [{ "path": "./tsconfig.node.json" }, { "path": "./tsconfig.web.json" }],
+  "compilerOptions": {
+    "target": "ESNext", // 或其他目标版本
+    "module": "ESNext", // 或其他模块格式
+    "strict": true,
+    "noImplicitAny": false, // 允许使用 any 类型
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "incremental": true, //启用增量编译 提高ts编译性能
+    "experimentalDecorators": true, //允许使用装饰器
+    "useDefineForClassFields": true,
+    "emitDecoratorMetadata": true,
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "skipLibCheck": true, //跳过对库的类型检查
+    "allowJs": true, //允许引入js文件
+    "checkJs": false, //检查js
+    /* Bundler mode */
+    "moduleResolution": "Bundler", //使用构建工具进行解析
+    "allowImportingTsExtensions": false, //是否允许导入ts扩展名的文件
+    "resolveJsonModule": true, //允许ts导入json模块进行类型检查
+    "isolatedModules": true, //启用独立模块编译。每个文件将被视为独立的模块
+    "jsx": "preserve", //指定 JSX 的处理方式保留jsx
+    "noUnusedLocals": true, //检查是否有未使用的局部变量
+    "strictBindCallApply": true, //启用严格的 bind、call 和 apply 方法检查
+    "noUnusedParameters": true, //检查是否有未使用的函数参数
+    "noFallthroughCasesInSwitch": true //在 switch 语句中检查是否遗漏了 break 语句
+  },
+  "exclude": ["node_modules", "out", ".rollup.cache"]
+}

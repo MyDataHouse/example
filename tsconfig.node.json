@@ -1,0 +1,32 @@
+{
+  "extends": ["@electron-toolkit/tsconfig/tsconfig.node.json"],
+  "include": [
+    "electron.vite.config.*",
+    "src/main/**/*",
+    "src/preload/**/*",
+    "./globe.d.ts",
+    "src/nest/**/*",
+    // "src/util/**/*",
+    "src/common/**/*",
+    "src/main/db/**/*"
+  ],
+  "compilerOptions": {
+    "removeComments": true,
+    "composite": true,
+    "module": "ESNext",
+    "outDir": "./out/main",
+    "allowImportingTsExtensions": false, //是否允许导入ts扩展名的文件
+    "esModuleInterop": true,
+    "incremental": true,
+    "useDefineForClassFields": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    // "lib": ["ESNext"],
+    "moduleResolution": "Bundler",
+    "types": ["electron-vite/node"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  }
+}

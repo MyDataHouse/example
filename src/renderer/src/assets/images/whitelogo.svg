@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_图层_2" data-name="图层 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 398.09 103.2">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: MicrosoftYaHei-Bold, 'Microsoft YaHei';
+        font-size: 55.4px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        font-family: MicrosoftYaHei, 'Microsoft YaHei';
+        font-size: 25.95px;
+      }
+    </style>
+  </defs>
+  <g id="_图层_1-2" data-name="图层 1">
+    <g>
+      <text class="cls-1" transform="translate(174.26 56.46)"><tspan x="0" y="0">三友信图</tspan></text>
+      <text class="cls-3" transform="translate(176.5 93.82)"><tspan x="0" y="0">—— 3U MAP——</tspan></text>
+      <polygon class="cls-2" points="38.82 0 30.86 20.49 77.16 20.49 77.16 0 38.82 0"/>
+      <polygon class="cls-2" points="25.08 40.75 15.43 61.72 77.16 61.72 77.16 40.75 25.08 40.75"/>
+      <polyline class="cls-2" points="7.47 81.98 0 103.2 77.16 103.2 77.16 81.98"/>
+      <polygon class="cls-2" points="77.16 0 77.16 103.2 154.55 103.2 130.44 29.31 107.54 29.55 126.58 82.22 97.89 82.22 97.41 0 77.16 0"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,104 @@
+:root {
+  --color: #1765f3; /* 主题色 */
+  --color-opacity: rgba(23, 101, 243, 0.5);
+  --font-color: #3c455a; /* 主标题字体颜色 */
+  --sub-font-color: #7c7c7c; /* 主要字体颜色 */
+  --f-btn: #fff; /* 按钮字体颜色 */
+  --placeholder-color: #c0c4cc; /* placeholder字体颜色 */
+  --input-border: #dcdfe6; /* 表单边框颜色 */
+  --bg1: #f0f3f6; /* 大背景色 */
+  --bg2: #f7f9fc; /* 小背景色 */
+  --bg1-text-color: #50596b;
+  --bg1-icon-color: #737b89;
+  --bg1-icon-bg: #e2e5e9;
+  --bg2-text-color: #283248;
+  --bg2-icon-color: #7b8290;
+  --dividing-line: #e2e5e9;
+  --earth-bg: rgba(255, 255, 255, 0.9); /* 地球背景 */
+  --shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px; /* 分块阴影 */
+  --el-tree: #dce9fd; /* 树形组件，:hover时颜色 */
+  --el-popper: #ebeef5; /* 下拉框组件小三角 */
+  --el-table: #fafafa; /*  表格组件奇数偶数颜色不同 */
+  --box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /* 盒子阴影 */
+  --progress-bar: #e4e7ed; /* tabs进度条颜色 */
+  --toggle-theme-border: rgba(60, 60, 60, 0.29); /* 切换主题按钮边框色 */
+  --toggle-theme-bg: #f1f1f1; /* 切换主题背景色 */
+  --form-disabled: #eee; /* 表单禁用背景颜色 */
+  --scrollbar: rgba(63, 63, 63, 0.1); /* 滚动条颜色 */
+  --delete: #f94a4e; /* 删除的颜色 */
+  --reset: #e6a23c; /* 重置 */
+  --create: #539165; /* 创建 */
+  --skeleton: linear-gradient(90deg, #f2f2f2 25%, #e6e6e6 37%, #f2f2f2 63%);
+}
+
+:root.dark {
+  --color: #1765f3;
+  --font-color: #fff;
+  --sub-font-color: #a1a18d;
+  --f-btn: #fff;
+  --placeholder-color: #606266;
+  --input-border: #4a4a4a;
+  --bg1: #1a1a21;
+  --bg2: #383838;
+  --bg1-text-color: #d1d1d3;
+  --bg1-icon-color: #a9a9ab;
+  --bg1-icon-bg: #3a3f45;
+  --bg2-text-color: #e8e8e9;
+  --bg2-icon-color: #626266;
+  --dividing-line: #2b2b31;
+  --earth-bg: rgba(56, 56, 56, 0.9); /* 地球背景 */
+  --shadow: rgba(3, 102, 214, 0.5) 0px 0px 0px 3px, rgba(0, 0, 0, 0.5) 2px 2px 5px 2px;
+  --el-tree: #232323;
+  --el-popper: #363636;
+  --el-table: #232323;
+  --box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px;
+  --progress-bar: #abb8c5; /* tabs进度条颜色 */
+  --toggle-theme-border: rgba(84, 84, 84, 0.65); /* 切换主题按钮边框色 */
+  --toggle-theme-bg: #2f2f2f; /* 切换主题背景色 */
+  --form-disabled: #7c7c7c; /* 表单禁用背景颜色 */
+  --scrollbar: rgba(206, 205, 205, 0.2); /* 滚动条颜色 */
+  --skeleton: linear-gradient(90deg, #2e2e2e 25%, #3f3f3f 37%, #333333 63%);
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+  /* background: linear-gradient(to right, #ffffff, #6dd5fa, #1765f3); */
+  body {
+    height: 100%;
+    width: 100%;
+    contain: paint;
+    -webkit-font-smoothing: antialiased; /* 在WebKit浏览器中启用抗锯齿 */
+    -moz-osx-font-smoothing: grayscale; /* 在Firefox和Safari上启用抗锯齿 */
+    text-rendering: optimizeLegibility; /* 提高文本的可读性 */
+    /* background: rgba(255, 255, 255, 0.6); */
+    /* backdrop-filter: blur(20px); */
+  }
+}
+
+img {
+  -webkit-user-drag: none;
+}
+
+.drag {
+  -webkit-app-region: drag;
+}
+.no-drag {
+  -webkit-app-region: no-drag;
+  user-select: none;
+}
+
+.element-enter {
+  animation: Element-Enter 0.2s ease forwards;
+}
+
+@keyframes Element-Enter {
+  0% {
+    transform: scale(0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
